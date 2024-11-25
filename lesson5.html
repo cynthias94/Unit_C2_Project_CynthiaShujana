@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <body style="background-color:lightskyblue;">
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/lesson5.html" aria-current="page">Lesson 5</a>
+      <a href="lesson6.html">Lesson 6</a>
+    </nav>
+    <main>
+      <h1 style= "color:black;font-family:garamond;">Iframes</h1>
+      <p style= "color:black;font-family:garamond;"><b>Iframes</b> allow an HTML document to display the contents of one or more other HTML documents. We use the &lt;iframe&gt; element to accomplish this.</p>
+      <ul>
+        <li style= "color:black;font-family:garamond;">The src attribute is used to determine the path to the html document or web page that will provide the contents of the iframe.</li>
+        <li style= "color:black;font-family:garamond;">Iframes are inline tags; if the width of an iframe is less than the width of the page, other content may appear to the right or left of it.</li>
+        <li style= "color:black;font-family:garamond;">The title attribute is used to provide screen readers  (an in case the source page is inaccessible) a description of the page that should be displayed in the iframe.</li>
+        <li style= "color:black;font-family:garamond;">The basic syntax of iframes is as follows: <br>
+        &lt;iframe src=”url” title=”description” width=”” or height=””&gt;&lt;/iframe&gt;
+</li>
+      </ul>
+      <h3 style= "color:black;font-family:garamond;">Styling of Iframes</h3>
+      <ul>
+        <li style= "color:black;font-family:garamond;">Although not necessary, you can use height and/or width attributes to control the size of the iframe window.</li>
+        <li style= "color:black;font-family:garamond;">You may specify either in terms of pixels (absolute height.width) or percentages (fractions of the current web page window).</li>
+        <li style= "color:black;font-family:garamond;">An example syntax of this is as follows: <br>
+        &lt;iframe src=”url” title=”description” width=”400%” height=”300px”&gt;&lt;/iframe&gt;
+</li>
+      </ul>
+      <h3 style= "color:black;font-family:garamond;">Iframe Example</h3>
+      <p style= "color:black;font-family:garamond;">This is what how an iframe may appear on a web page (for our example we are using the DOE school calender):</p>
+       <iframe src="https://www.schools.nyc.gov/calendar/2024-2025-school-year-calendar" style="border:none;" title="2024-2025 school year calender"></iframe>
+      
+    </main>
+  </body>
+</html>

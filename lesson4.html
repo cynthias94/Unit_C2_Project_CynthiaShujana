@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <body style="background-color:lightskyblue;">
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a> 
+      <a href="/lesson4.html" aria-current="page">Lesson 4</a>
+      <a href="lesson5.html">Lesson 5</a>
+     
+    </nav>
+    <main>
+      <h1 style= "color:black;font-family:garamond;">Tables</h1>
+      <h2 style= "color:black;font-family:garamond;">Tables</h2>
+      <ul>
+        <li style= "color:black;font-family:garamond;"><b>Tables</b> allow web developers to arrange data into a grid like structure</li>
+        <li style= "color:black;font-family:garamond;">Aside  from tables with grid border, you can also create tables without border, and position content without it looking like a grid</li>
+        <li style= "color:black;font-family:garamond;">The essential elements for tables are: <br>
+          <ul>
+            <li style= "color:black;font-family:garamond;"><b>&lt;Table&gt;</b> creates the table</li>
+            <li style= "color:black;font-family:garamond;"><b>&lt;tr&gt;</b> creates a row</li>
+            <li style= "color:black;font-family:garamond;"><b>&lt;th&gt;</b> creates a heading cell</li>
+            <li style= "color:black;font-family:garamond;"><b>&lt;td&gt;</b> creates a data cell</li></li>
+      </ul>
+    <h3 style= "color:black;font-family:garamond;">Basic Structure of Tables</h3>
+      <pre>
+        &lt;table&gt; border=”1” (border attribute where 1 is the default) 
+             &lt;tr&gt; 
+               &lt;th&gt;Heading 1&lt;/th&gt;
+               &lt;th&gt;Heading 2&lt;/th&gt;
+             &lt;/tr&gt;
+             &lt;tr&gt;
+                &lt;td&gt;Data 1&lt;/td&gt;
+                &lt;td&gt; Data 2&lt;/td&gt;
+             &lt;/tr&gt;
+        &lt;/table&gt;</pre>
+      <h3 style= "color:black;font-family:garamond;">Styling Tables</h3>
+      <h4 style= "color:black;font-family:garamond;">Table Borders</h4>
+      <p style= "color:black;font-family:garamond;">In HTML 5 we use CSS to create borders. If you want a table with borders, add the following code to the CSS section of your web page on CodePen: <br>
+        Table, th, td {border:1px solid black;}</p>
+      <h4 style= "color:black;font-family:garamond;">Table and Cell Sizes</h4>
+      <p style= "color:black;font-family:garamond;">
+        By default, a table will size itself to fit the contents of the cell within it. But you can force a table (or the cells within it) to have specific sizes. You can specify pixels (px) or percentages of the width or height of the page. <br> <br>
+        If you want to control the size, write the following into the styling section of CodePen:</p>
+        <pre>
+          
+        Table {
+          width:100%;
+          height:500px
+          }
+        th,td{
+          width:100px;
+          height:50px;
+          }
+        </pre>
+      
+      <h4 style= "color:black;font-family:garamond;">Colspan and Rowspan</h4>
+      <p style= "color:black;font-family:garamond;">
+        Sometimes you want a cell to break access to more than one row or column (or both). In this case, you use  the  rowspan or colspan attribute.( the number tells how many of either it expands to) <br> <br>
+        &lt;th colspan=”2”&gt; <br>
+        &lt;td rowspan=”2”&gt; </p>
+   
+    </main>
+  </body>
+</html>

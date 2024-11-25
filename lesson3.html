@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <body style="background-color:lightskyblue;">
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+       <a href="/">Home</a>
+      <a href="/lesson3.html" aria-current="page">Lesson 3</a>
+      <a href="lesson4.html">Lesson 4</a>
+    </nav>
+    <main>
+      <h1 style= "color:black;font-family:garamond;">Headings and Paragraphs</h1>
+      <h2 style= "color:black;font-family:garamond;">Headings</h2>
+      <ul>
+        <li style= "color:black;font-family:garamond;">Headings are used to create an outline: structure of a web page</li>
+        <li style= "color:black;font-family:garamond;">There are 6 headings types: <b>&lt;h1&gt;</b> through <b>&lt;h6&gt;</b></li>
+        <li style= "color:black;font-family:garamond;">Aside from the size of the text headings allow assistive devices like screen readers</li>
+        <li style= "color:black;font-family:garamond;">All headings are block level elements</li> 
+        <pre>        
+      &lt;h1&gt;The top-level heading&lt;/h1&gt; 
+        &lt;h2&gt;second level&lt;/h2&gt; 
+          &lt;h3&gt;third level&lt;/h3&gt; 
+            &lt;h4&gt;fourth level&lt;/h4&gt;
+        </pre>
+      </ul>
+      <p style= "color:black;font-family:garamond;">The head is where the page’s metadata is found, along with everything else that is meant not to appear on the visible part of the page. </p>
+      <h3 style= "color:black;font-family:garamond;">What should go in the head?</h3>
+      <p style= "color:black;font-family:garamond;">Five types of things are found in the head:
+</p>
+      <ul>
+        <li style= "color:black;font-family:garamond;"><b>Title</b>- the title is what shows up at the top of the web page window or tab.</li>
+        <li style= "color:black;font-family:garamond;"><b>Metadata</b>:  data that is invisible to the viewer but is visible to the web crawlers and this important when the page appears in search results.</li>
+        <li style= "color:black;font-family:garamond;"><b>Styles</b>: instructions to the web browser on how the web page should look.</li>
+        <li style= "color:black;font-family:garamond;"><b>Scripts</b>: JavaScript code that must run before the body of the web page loads.</li>
+        <li style= "color:black;font-family:garamond;"><b>Links</b>: important files that are linked to the page, including external CSS and JavaScript files.</li>
+      </ul>
+     <h2 style= "color:black;font-family:garamond;">Paragraphs</h2>
+      <ul>
+        <li style= "color:black;font-family:garamond;">Paragraph <b>&lt;p&gt;</b> is the workhouse tag of web design. Most blocks of text use a paragraph for their formatting.</li>
+        <li style= "color:black;font-family:garamond;">Paragraphs are block-level elements, creating space above and below them on the page.</li>
+        <li style= "color:black;font-family:garamond;">If you want to create a line break, use  the <b>&lt;br&gt;</b> tag <br>
+      &lt;br&gt; will end the text at the point it is inserted and continue it onto the next line. It is an inline element.</li>
+      </ul>
+      <h2 style= "color:black;font-family:garamond;">Horizontal and Preformatted Text</h2>
+      <ul>
+        <li style= "color:black;font-family:garamond;">If you want to create a line between blocks of text, use  the <b>&lt;hr&gt;</b> element. Hr is an empty tag.</li>
+        <li style= "color:black;font-family:garamond;">If you want to preserve multiple spaces or line breaks for text like in poems, you can use the preformatted text <b>&lt;pre&gt;</b> tag. Pre is a block-level element.</li>
+      </ul>
+      <h3 style= "color:black;font-family:garamond;">Example:</h3>
+     <pre>
+        &lt;p&gt;poem&lt;/p&gt;
+        &lt;hr&gt;&lt;!-- creates a line- - > <br>
+        &lt;pre&gt; this text in this tag <br>
+              Will display <br>
+            Exactly as <br>
+                 You see it <br>
+        &lt;/pre&gt; 
+     </pre>
+      <h2 style= "color:black;font-family:garamond;">Lorem Ipsum Text</h2>
+      <p style= "color:black;font-family:garamond;"><b>Lorem Ipsum</b> text was created long before the use of computers so that book designers could format their products before the writers delivered the content. Web designers use it now to mock up pages. (used for filler text=mock up)(generator on the web can be used  to get the lorem ipsum text) <br> <br>
+      An example of what this can look like is as follows: <br>
+      "Lorem ipsum odor amet, consectetuer adipiscing elit. Congue sed condimentum eget lacus tortor semper natoque. Amet natoque metus dolor ornare; volutpat suspendisse. Maximus sagittis dictumst nisi iaculis netus; metus egestas. Ante pellentesque urna maecenas consequat dignissim. Lorem accumsan rutrum sagittis vestibulum duis. Varius dignissim porta sollicitudin fringilla mauris facilisi. Porta laoreet nisl malesuada efficitur dui."</p>
+   
+    </main>
+  </body>
+</html>

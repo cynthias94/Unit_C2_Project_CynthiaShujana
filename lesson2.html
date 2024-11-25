@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <body style="background-color:lightskyblue;">
+    <title>Lesson 2</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/lesson2.html" aria-current="page">Lesson 2</a>
+       <a href="lesson3.html">Lesson 3</a>
+    </nav>
+    <main>
+      <h1 style= "color:black;font-family:garamond;">Comments, Attributes, and More</h1> 
+      <h2 style= "color:black;font-family:garamond;">Comments</h2>
+      <p style= "color:black;font-family:garamond;">Comments are text hidden within an HTML document. In order to create an HTML comment, you must use the characters “<b>&lt;!--</b>” before the comment text and “<b>--></b>” after it</p>
+      <ul>
+        <li style= "color:black;font-family:garamond;">&lt;!-- This is a single line comment</li>
+        <li style= "color:black;font-family:garamond;">&lt;!-- This is a <br> multi-line comment --> </li>
+        <li style= "color:black;font-family:garamond;">&lt;!-- You can disable elements like  (&lt;h1&gt; Hello World &lt;/h1&gt;) by enclosing  them in a comment --></li>  
+      </ul>
+      <h2 style= "color:black;font-family:garamond;">Attributes</h2>
+      <p style= "color:black;font-family:garamond;"><b>Attributes</b> are codes that appear within the opening tag of an element. They are used to modify the element in some way. They general syntax for an attribute is: <br> <br>
+        <b>&lt;tagName attributeName="value"&gt;content&lt;/tagName&gt;</b> <br> <br>
+      Examples of some attributes are:</p>
+      <ul>
+        <li style= "color:black;font-family:garamond;">&lt;img src="happyface".jpg&gt;</li>
+        <li style= "color:black;font-family:garamond;">&lt;p style="color:red"&gt; This paragraph will appear in red &lt;/p&gt;</li>
+      </ul>
+      <h2 style= "color:black;font-family:garamond;">Links</h2>
+      <p style= "color:black;font-family:garamond;">Links use the anchor or <b>&lt;a&gt;</b> element to make a hyperlink to another page or to another location on the same page. It is an inline element. To locate the link, you need the <b>href</b> attribute.</p> 
+      <ul>
+        <li style= "color:black;font-family:garamond;">The general syntax for a link is as follows:<br> 
+        <b>&lt;a href="pathToFile"&gt;LinkText&lt;/a&gt;</b></li> <br>
+        <li style= "color:black;font-family:garamond;"> Syntax for absolute, or external, links can look like: <br>
+        &lt;a href="https://google.com"&gt;Google&lt;/a&gt;</li> <br>
+        <li style= "color:black;font-family:garamond;">Syntax for relative, or internal, links can look like: <br>
+        &lt;a href="/index.html"&gt;Home Page&lt;/a&gt;</li>
+      </ul>
+      <h3 style= "color:black;font-family:garamond;">More Link Attributes</h3>
+      <ul>
+        <li style= "color:black;font-family:garamond;"><b>Download</b> lets the user download a file <br>
+        &lt;a download="fileName"&gt;...</li> <br>
+        <li style= "color:black;font-family:garamond;"><b>Target</b> specifies a specific place within the page that the link opens <br>
+        &lt;a href="URL" target="_blank"&gt;... <br> <br>
+        Some targets: <br>
+        <ol style= "color:black;font-family:garamond;">_blank opens in a new window/tab
+</ol> <br>
+        <ol style= "color:black;font-family:garamond;">_top opens at the top of the page
+</ol> <br>
+        <ol style= "color:black;font-family:garamond;">_self opens within the same iframe</ol> <br><ol> _parent opens within the parent of the current frame
+</ol></li>
+      </ul>
+      <h2 style= "color:black;font-family:garamond;">Embedding Images</h2>
+      <p style= "color:black;font-family:garamond;">Images are embedded on a web page using the <b>&lt;img&gt;</b> element. It is an empty element (no trailing tag) and works inline. To locate the image you must  use  the <b>src</b> attribute. You must also use the <b>alt</b> attribute to describe the image for screen readers or if the image will not load. <br>
+      There are two ways to embed images: local images and remote images. A local image is one that is pre-downloaded onto one's device. A remote image is an image that is found on the web through a link. <br> <br>
+      An example syntax for a local image is as follows: <br>
+      &lt;img src="happyface.jpg"alt="Smiley Face"&gt;<br> <br>
+     An example for the syntax of a remote image is as follows: <br>
+      &lt;img src="https://png.pngtree.com/png-vector/20241014/ourmid/pngtree-playful-smiley-face-clipart-showcasing-a-happy-emoji-suitable-for-use-png-image_14090536.png"alt="Smiley Face"&gt; <br> <br>
+      On a web page, this embedded image will appear as such: <br>
+       <img src="https://png.pngtree.com/png-vector/20241014/ourmid/pngtree-playful-smiley-face-clipart-showcasing-a-happy-emoji-suitable-for-use-png-image_14090536.png"alt="Smiley Face"style="width:300px"></p>
+      <h3 style= "color:black;font-family:garamond;">Sizing Images</h3>
+      <p style= "color:black;font-family:garamond;">You can control the size of images using the width or height attributes, or both. The actual dimensions are specified in pixels. If you only specify solely the height or width, the image will scale proportionally. If you specify both, the image will fix itself to the dimensions you chose. <br> <br>
+        An example syntax of this is as follows: <br>
+        &lt;img src=”file”width=”200”&gt; <br> <br>
+The HTML <b>style attribute</b> can also be used to add style to an element. This includes color, font, font size, and more. In the case of images, one can specify the height and width of the image using this attribute. <br> <br>
+        The general syntax is as follows: <br>
+        &lt;tagname style="property:value;"&gt;</p>
+      
+    </main>
+  </body>
+</html>
