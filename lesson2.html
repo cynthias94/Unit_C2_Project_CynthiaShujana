@@ -2,75 +2,111 @@
 <html lang="en">
   <head>
     <title>Lesson 2</title>
+    <style>
+      table,th,td {
+        border: 1px solid black;
+      }
+      tr:nth-child(odd) {
+        background-color: floralwhite
+      }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="script.js"></script>
   </head>
-    <body style="background-color:lightskyblue;">
     <nav>
       <a href="/">Home</a>
       <a href="/lesson2.html" aria-current="page">Lesson 2</a>
-       <a href="lesson3.html">Lesson 3</a>
+      <a href="lesson3.html">Lesson 3</a>
     </nav>
     <main>
-      <h1 style= "color:black;font-family:garamond;">Comments, Attributes, and More</h1> 
-      <h2 style= "color:black;font-family:garamond;">Comments</h2>
-      <p style= "color:black;font-family:garamond;">Comments are text hidden within an HTML document. In order to create an HTML comment, you must use the characters “<b>&lt;!--</b>” before the comment text and “<b>--></b>” after it</p>
+      <h1 style= "color:black;font-family:garamond;">Formatting Tags and Lists</h1> 
+      <p style= "color:black;font-family:garamond;">Before beginning, the essential HTML elements must be known. A properly written web page should have the following elements in such order:   
+      </p>
       <ul>
-        <li style= "color:black;font-family:garamond;">&lt;!-- This is a single line comment</li>
-        <li style= "color:black;font-family:garamond;">&lt;!-- This is a <br> multi-line comment --> </li>
-        <li style= "color:black;font-family:garamond;">&lt;!-- You can disable elements like  (&lt;h1&gt; Hello World &lt;/h1&gt;) by enclosing  them in a comment --></li>  
+        <li style= "color:black;font-family:garamond;">The HTML's doctype declaration</li>
+        <li style= "color:black;font-family:garamond;">The HTML tag- this begins and ends the page</li>
+        <li style= "color:black;font-family:garamond;">The head tag- this contains the title of the page and other information (the metadata)</li>
+        <li style= "color:black;font-family:garamond;">The title tag- this showcases the text that appears on the browser tab</li>
+        <li style= "color:black;font-family:garamond;">The body tag- this tag contains the visible content showcased on the webpage</li>
       </ul>
-      <h2 style= "color:black;font-family:garamond;">Attributes</h2>
-      <p style= "color:black;font-family:garamond;"><b>Attributes</b> are codes that appear within the opening tag of an element. They are used to modify the element in some way. They general syntax for an attribute is: <br> <br>
-        <b>&lt;tagName attributeName="value"&gt;content&lt;/tagName&gt;</b> <br> <br>
-      Examples of some attributes are:</p>
+      <h3 style= "color:black;font-family:garamond;"> The general set-up incorporting these elements:</h3>
+      <pre>
+        &lt;!DOCTYPE html&gt; 
+        &lt;html&gt; 
+        &lt;head&gt; 
+          &lt;title&gt; Title of the page &lt;/title&gt; 
+        &lt;/head&gt; 
+        &lt;body&gt; 
+        &lt;/body&gt; 
+        &lt;/html&gt; 
+      </pre>
+      <h3 style= "color:black;font-family:garamond;">Types of Tags</h3>
+      <p style= "color:black;font-family:garamond;">HTML has two types of body elements:</p>
+        <ul>
+          <li style= "color:black;font-family:garamond;"><b>Block-level elements</b> will automatically appear on separate files on the page. <br> </li>
+          <li style= "color:black;font-family:garamond;">&lt;p&gt; (paragraph tag) and &lt;h1&gt; (heading tag) are examples of block level elements</li>
+          <li style= "color:black;font-family:garamond;"><b>Inline elements</b> can appear next to one another horizontally so that text with an inline element in it will not start a new line.
+</li>
+          <li style= "color:black;font-family:garamond;">&lt;strong&gt; (turns text bold) and &lt;i&gt; (turns text into italics) are examples of inline elements</li>
+        </ul>
+      <h3 style= "color:black;font-family:garamond;">Formatting Tags</h3>
+      <p style= "color:black;font-family:garamond;">Several elements modify the  look of text within them. These are all the inline elements, you can use them to modify one or more characters within a line of text.</p>
+      <table>
+        <tr>
+          <th style="color:darkblue;">Tags</th>
+          <th style="color:darkblue;">Meaning</th>
+        </tr>
+        <tr>
+          <td>&lt;b&gt; &lt;/b&gt;</td>
+          <td rowspan="2">This will make text appear bold</td>
+        </tr>
+        <tr>
+          <td>&lt;strong&gt; &lt;/strong&gt;</td>
+        </tr>
+        <tr>
+          <td>&lt;i&gt; &lt;/i&gt;</td>
+          <td rowspan="2">This will make text appear in italics</td>
+        </tr>
+        <tr>
+          <td>&lt;em&gt; &lt;/em&gt;</td>
+        </tr>
+        <tr>
+          <td>&lt;mark&gt; &lt;/mark&gt;</td>
+          <td>This will make text appear highlighted</td>
+        </tr>
+        <tr>
+          <td>&lt;small&gt; &lt;/small&gt;</td>
+          <td>This will make text appear smaller</td>
+        </tr>
+        <tr>
+          <td>&lt;del&gt; &lt;/del&gt;</td>
+          <td>This  will make text appear crossed out</td>
+        </tr>
+        <tr>
+          <td>&lt;ins&gt; &lt;/ins&gt;</td>
+          <td>This will make text appear underlined</td>
+        </tr>
+        <tr>
+          <td>&lt;sub&gt; &lt;/sub&gt;</td>
+          <td>This will make text appear as a subscript</td>
+        </tr>
+        <tr>
+          <td>&lt;sup&gt; &lt;/sup&gt;</td>
+          <td>This will make text appear as a superscript</td>
+        </tr>
+      </table>
+      <h3 style= "color:black;font-family:garamond;">List Elements</h3>
+      <p style= "color:black;font-family:garamond;">There are two types of list elements:</p>
       <ul>
-        <li style= "color:black;font-family:garamond;">&lt;img src="happyface".jpg&gt;</li>
-        <li style= "color:black;font-family:garamond;">&lt;p style="color:red"&gt; This paragraph will appear in red &lt;/p&gt;</li>
+        <li style= "color:black;font-family:garamond;"><b>&lt;ol&gt;</b> creates an <b>ordered list</b> (a list with numbers)</li>
+        <li style= "color:black;font-family:garamond;"><b>&lt;ul&gt;</b> creates an <b>unordered list</b> (a list with bullets)</li>
       </ul>
-      <h2 style= "color:black;font-family:garamond;">Links</h2>
-      <p style= "color:black;font-family:garamond;">Links use the anchor or <b>&lt;a&gt;</b> element to make a hyperlink to another page or to another location on the same page. It is an inline element. To locate the link, you need the <b>href</b> attribute.</p> 
+      <p style= "color:black;font-family:garamond;">Both list types use <b>&lt;li&gt; (list item)</b> for items within a list</p>
       <ul>
-        <li style= "color:black;font-family:garamond;">The general syntax for a link is as follows:<br> 
-        <b>&lt;a href="pathToFile"&gt;LinkText&lt;/a&gt;</b></li> <br>
-        <li style= "color:black;font-family:garamond;"> Syntax for absolute, or external, links can look like: <br>
-        &lt;a href="https://google.com"&gt;Google&lt;/a&gt;</li> <br>
-        <li style= "color:black;font-family:garamond;">Syntax for relative, or internal, links can look like: <br>
-        &lt;a href="/index.html"&gt;Home Page&lt;/a&gt;</li>
+        <li style= "color:black;font-family:garamond;">&lt;ol&gt;, &lt;ul&gt;, and &lt;li&gt; are all block level elements</li>
       </ul>
-      <h3 style= "color:black;font-family:garamond;">More Link Attributes</h3>
-      <ul>
-        <li style= "color:black;font-family:garamond;"><b>Download</b> lets the user download a file <br>
-        &lt;a download="fileName"&gt;...</li> <br>
-        <li style= "color:black;font-family:garamond;"><b>Target</b> specifies a specific place within the page that the link opens <br>
-        &lt;a href="URL" target="_blank"&gt;... <br> <br>
-        Some targets: <br>
-        <ol style= "color:black;font-family:garamond;">_blank opens in a new window/tab
-</ol> <br>
-        <ol style= "color:black;font-family:garamond;">_top opens at the top of the page
-</ol> <br>
-        <ol style= "color:black;font-family:garamond;">_self opens within the same iframe</ol> <br><ol> _parent opens within the parent of the current frame
-</ol></li>
-      </ul>
-      <h2 style= "color:black;font-family:garamond;">Embedding Images</h2>
-      <p style= "color:black;font-family:garamond;">Images are embedded on a web page using the <b>&lt;img&gt;</b> element. It is an empty element (no trailing tag) and works inline. To locate the image you must  use  the <b>src</b> attribute. You must also use the <b>alt</b> attribute to describe the image for screen readers or if the image will not load. <br>
-      There are two ways to embed images: local images and remote images. A local image is one that is pre-downloaded onto one's device. A remote image is an image that is found on the web through a link. <br> <br>
-      An example syntax for a local image is as follows: <br>
-      &lt;img src="happyface.jpg"alt="Smiley Face"&gt;<br> <br>
-     An example for the syntax of a remote image is as follows: <br>
-      &lt;img src="happyface.png"alt="Smiley Face"&gt; <br> <br>
-      On a web page, this embedded image will appear as such: <br>
-       <img src="happyface.png"alt="Smiley Face"style="width:300px"></p>
-      <h3 style= "color:black;font-family:garamond;">Sizing Images</h3>
-      <p style= "color:black;font-family:garamond;">You can control the size of images using the width or height attributes, or both. The actual dimensions are specified in pixels. If you only specify solely the height or width, the image will scale proportionally. If you specify both, the image will fix itself to the dimensions you chose. <br> <br>
-        An example syntax of this is as follows: <br>
-        &lt;img src=”file”width=”200”&gt; <br> <br>
-The HTML <b>style attribute</b> can also be used to add style to an element. This includes color, font, font size, and more. In the case of images, one can specify the height and width of the image using this attribute. <br> <br>
-        The general syntax is as follows: <br>
-        &lt;tagname style="property:value;"&gt;</p>
-      
     </main>
   </body>
 </html>
